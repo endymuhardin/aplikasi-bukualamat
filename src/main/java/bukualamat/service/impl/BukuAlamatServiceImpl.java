@@ -19,7 +19,7 @@ import org.springframework.transaction.annotation.Transactional;
  *
  * @author endy
  */
-@Service
+@Service("bukuAlamatService")
 @Transactional
 public class BukuAlamatServiceImpl implements BukuAlamatService {
 
