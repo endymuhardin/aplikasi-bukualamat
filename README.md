@@ -1,6 +1,5 @@
 Aplikasi Buku Alamat
 
-=========
 Deskripsi
 =========
 Contoh aplikasi kecil menggunakan Spring dan Hibernate. 
@@ -10,13 +9,11 @@ Beberapa fiturnya antara lain :
 *  Relasi Many to One
 *  Declarative Transaction dengan Spring
 
-==================
 Kebutuhan Software
 ==================
 *  Java SDK versi 6
 *  Maven versi 2
 
-===============
 Cara Penggunaan
 ===============
 
