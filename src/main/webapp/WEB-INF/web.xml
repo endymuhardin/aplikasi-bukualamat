@@ -18,10 +18,26 @@
 		<servlet-class>bukualamat.ui.servlet.DaftarGrup</servlet-class>
 	</servlet>
 	
+	<servlet>
+		<servlet-name>EditGrup</servlet-name>
+		<servlet-class>bukualamat.ui.servlet.EditGrup</servlet-class>
+	</servlet>
+	
 	<servlet-mapping>
 		<servlet-name>DaftarGrup</servlet-name>
 		<url-pattern>/grup/list.asp</url-pattern>
 	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>EditGrup</servlet-name>
+		<url-pattern>/grup/edit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>EditGrup</servlet-name>
+		<url-pattern>/grup/simpan</url-pattern>
+	</servlet-mapping>
+	
 
     <session-config>
         <session-timeout>
