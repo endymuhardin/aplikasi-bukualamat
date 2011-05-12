@@ -21,7 +21,7 @@ Released   : 20091101
 </head>
 <body>
 	<div id="logo">
-		<h1><a href="#">Guarantee  </a></h1>
+		<h1><a href="#">Aplikasi Buku Alamat  </a></h1>
 		<p><em> template design by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a></em></p>
 	</div>
 	<hr />
@@ -29,10 +29,10 @@ Released   : 20091101
 	<div id="header">
 		<div id="menu">
 			<ul>
-				<li><a href="#" class="first">Home</a></li>
-				<li class="current_page_item"><a href="#">Blog</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="<%=request.getContextPath()%>/" class="first">Home</a></li>
+				<li class="current_page_item">
+					<a href="<%=request.getContextPath()%>/j_spring_security_logout">Logout</a>
+				</li>
 			</ul>
 		</div>
 		<!-- end #menu -->
@@ -57,35 +57,15 @@ Released   : 20091101
 		<div id="sidebar">
 			<ul>
 				<li>
-					<h2>Aliquam tempus</h2>
-					<p>Mauris vitae nisl nec metus placerat perdiet est. Phasellus dapibus semper urna. Pellentesque ornare, orci in consectetuer hendrerit, volutpat.</p>
+					<h2>Aplikasi Buku Alamat</h2>
+					<p>
+					Contoh aplikasi yang dibuat menggunakan Spring dan Hibernate
+					</p>
 				</li>
 				<li>
-					<h2>Pellenteque ornare </h2>
+					<h2>Menu Aplikasi</h2>
 					<ul>
-						<li><a href="#">Nec metus sed donec</a></li>
-						<li><a href="#">Magna lacus bibendum mauris</a></li>
-						<li><a href="#">Velit semper nisi molestie</a></li>
-						<li><a href="#">Eget tempor eget nonummy</a></li>
-						<li><a href="#">Nec metus sed donec</a></li>
-						<li><a href="#">Velit semper nisi molestie</a></li>
-						<li><a href="#">Eget tempor eget nonummy</a></li>
-						<li><a href="#">Nec metus sed donec</a></li>
-					</ul>
-				</li>
-				<li>
-					<h2>Turpis nulla</h2>
-					<ul>
-						<li><a href="#">Nec metus sed donec</a></li>
-						<li><a href="#">Magna lacus bibendum mauris</a></li>
-						<li><a href="#">Velit semper nisi molestie</a></li>
-						<li><a href="#">Eget tempor eget nonummy</a></li>
-						<li><a href="#">Nec metus sed donec</a></li>
-						<li><a href="#">Nec metus sed donec</a></li>
-						<li><a href="#">Magna lacus bibendum mauris</a></li>
-						<li><a href="#">Velit semper nisi molestie</a></li>
-						<li><a href="#">Eget tempor eget nonummy</a></li>
-						<li><a href="#">Nec metus sed donec</a></li>
+						<li><a href="<%=request.getContextPath()%>/grup/list.asp">Daftar Grup</a></li>
 					</ul>
 				</li>
 			</ul>
