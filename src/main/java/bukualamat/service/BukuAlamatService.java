@@ -16,6 +16,7 @@ public interface BukuAlamatService {
     public void simpan(Grup grup);
     public void hapus(Grup grup);
     public Grup cariGrupById(Long id);
+    public Grup cariGrupByKode(String kode);
     public List<Grup> semuaGrup();
     
     

@@ -24,7 +24,7 @@ public class Kontak {
     private Long id;
     
     @ManyToOne
-    @JoinColumn(name="id_grup", nullable=false)
+    @JoinColumn(name="id_grup")
     private Grup grup;
 
     @NotNull

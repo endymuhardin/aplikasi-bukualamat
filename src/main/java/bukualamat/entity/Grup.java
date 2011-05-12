@@ -4,10 +4,15 @@
  */
 package bukualamat.entity;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -29,8 +34,29 @@ public class Grup {
     
     @Column(nullable=false)
     private String nama;
+    
+    @OneToMany(mappedBy="grup", cascade=CascadeType.ALL, orphanRemoval=true)
+    private List<Kontak> daftarKontak = new ArrayList<Kontak>();
+    
+    public void addKontak(Kontak k){
+    	daftarKontak.add(k);
+    	k.setGrup(this);
+    }
+    
+    public void removeKontak(Kontak k){
+    	daftarKontak.remove(k);
+    	k.setGrup(null);
+    }
+    
+	public List<Kontak> getDaftarKontak() {
+		return daftarKontak;
+	}
 
-    public Long getId() {
+	public void setDaftarKontak(List<Kontak> daftarKontak) {
+		this.daftarKontak = daftarKontak;
+	}
+
+	public Long getId() {
         return id;
     }
 

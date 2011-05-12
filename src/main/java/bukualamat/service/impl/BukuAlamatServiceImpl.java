@@ -10,6 +10,8 @@ import bukualamat.service.BukuAlamatService;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import org.hibernate.Hibernate;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -84,5 +86,15 @@ public class BukuAlamatServiceImpl implements BukuAlamatService {
 		.setLong("grup", grup.getId())
 		.list();
     }
+
+	@Override
+	public Grup cariGrupByKode(String kode) {
+		Grup g = (Grup) sessionFactory.getCurrentSession()
+		.createQuery("from Grup where kode = :kode")
+		.setString("kode", kode)
+		.uniqueResult();
+		Hibernate.initialize(g.getDaftarKontak());
+		return g;
+	}
     
 }
