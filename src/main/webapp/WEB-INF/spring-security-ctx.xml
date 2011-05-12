@@ -9,7 +9,10 @@
 		<intercept-url pattern="/grup/list.asp*/**" access="ROLE_USER" />
 		<intercept-url pattern="/grup/edit/**" access="ROLE_ADMIN" />
 		<intercept-url pattern="/grup/simpan/**" access="ROLE_ADMIN" />
+		<intercept-url pattern="/index.html/**" access="ROLE_USER" />
 		<intercept-url pattern="/**" filters="none" />
+		
+		<form-login login-page="/login.html" default-target-url="/index.html"/>
 	</http>
 
 	<authentication-manager>
