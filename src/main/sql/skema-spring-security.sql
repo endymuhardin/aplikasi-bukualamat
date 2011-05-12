@@ -12,3 +12,6 @@ create table authorities (
 );
 
 create unique index ix_auth_username on authorities (username,authority);
+
+insert into users values ('adi', '123', 1);
+insert into authorities values ('adi', 'ROLE_USER');
