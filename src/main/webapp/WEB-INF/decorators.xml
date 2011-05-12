@@ -2,4 +2,7 @@
 	<decorator name="main" page="utama.jsp">
 		<pattern>/*</pattern>
 	</decorator>
+	<excludes>
+        <pattern>/login.html</pattern>
+    </excludes>
 </decorators>
