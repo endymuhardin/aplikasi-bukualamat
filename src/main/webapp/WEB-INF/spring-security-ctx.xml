@@ -6,7 +6,10 @@
            http://www.springframework.org/schema/security/spring-security-3.0.3.xsd">
 
 	<http auto-config="true">
-		<intercept-url pattern="/**" access="ROLE_USER" />
+		<intercept-url pattern="/grup/list.asp*/**" access="ROLE_USER" />
+		<intercept-url pattern="/grup/edit/**" access="ROLE_ADMIN" />
+		<intercept-url pattern="/grup/simpan/**" access="ROLE_ADMIN" />
+		<intercept-url pattern="/**" filters="none"/>
 	</http>
 
 	<authentication-manager>
