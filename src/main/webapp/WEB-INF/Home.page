@@ -15,7 +15,5 @@
 	<component id="nama" type="TextField">
 		<binding name="value" value="ognl:grup.nama"/>	
 	</component>
-	
-	<inject property="bukuAlamatService" object="spring:bukuAlamatService"/>
 
 </page-specification>

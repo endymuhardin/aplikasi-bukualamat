@@ -143,6 +143,12 @@
 			<artifactId>tapestry-framework</artifactId>
 			<version>4.1.6</version>
 		</dependency>
+		
+		<dependency>
+			<groupId>org.apache.tapestry</groupId>
+			<artifactId>tapestry-annotations</artifactId>
+			<version>4.1.6</version>
+		</dependency>
 
 		<dependency>
 			<groupId>com.javaforge.tapestry</groupId>
