@@ -3,9 +3,25 @@ package bukualamat.ui.tapestry.controller;
 import org.apache.tapestry.html.BasePage;
 import org.apache.tapestry.record.PropertyChangeObserver;
 
-public class GrupController extends BasePage {
+import bukualamat.entity.Grup;
+import bukualamat.service.BukuAlamatService;
+
+public abstract class GrupController extends BasePage {
+	private Grup grup = new Grup();
+	
 	public void simpan(){
+		getBukuAlamatService().simpan(grup);
 		System.out.println("Method simpan ditekan");
+	}
+
+	public abstract BukuAlamatService getBukuAlamatService();
+
+	public Grup getGrup() {
+		return grup;
+	}
+
+	public void setGrup(Grup grup) {
+		this.grup = grup;
 	}
 
 	@Override

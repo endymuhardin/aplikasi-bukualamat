@@ -8,5 +8,14 @@
 		<binding name="listener" value="listener:simpan"/>	
 	</component>
 	
+	<component id="kode" type="TextField">
+		<binding name="value" value="ognl:grup.kode"/>	
+	</component>
+	
+	<component id="nama" type="TextField">
+		<binding name="value" value="ognl:grup.nama"/>	
+	</component>
+	
+	<inject property="bukuAlamatService" object="spring:bukuAlamatService"/>
 
 </page-specification>
