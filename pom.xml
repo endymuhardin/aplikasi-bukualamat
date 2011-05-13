@@ -137,6 +137,13 @@
 			<scope>runtime</scope>
 		</dependency>
 
+		<!-- dependensi tapestry -->
+		<dependency>
+			<groupId>org.apache.tapestry</groupId>
+			<artifactId>tapestry-framework</artifactId>
+			<version>4.1.6</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
