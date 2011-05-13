@@ -11,9 +11,10 @@ import bukualamat.service.BukuAlamatService;
 public abstract class GrupController extends BasePage {
 	private Grup grup = new Grup();
 	
-	public void simpan(){
+	public String simpan(){
 		getBukuAlamatService().simpan(grup);
 		System.out.println("Method simpan ditekan");
+		return "DaftarGrup";
 	}
 
 	@InjectSpring("bukuAlamatService")
