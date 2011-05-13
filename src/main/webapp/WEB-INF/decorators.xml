@@ -4,5 +4,6 @@
 	</decorator>
 	<excludes>
         <pattern>/login.html</pattern>
+        <pattern>/app*</pattern>
     </excludes>
 </decorators>
