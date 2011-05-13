@@ -46,6 +46,18 @@
 		<servlet-class>bukualamat.ui.servlet.EditGrup</servlet-class>
 	</servlet>
 
+	<!-- servletnya Tapestry -->
+	<servlet>
+		<servlet-name>Tapestry</servlet-name>
+		<servlet-class>org.apache.tapestry.ApplicationServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Tapestry</servlet-name>
+		<url-pattern>/app</url-pattern>
+	</servlet-mapping>
+
+
 	<servlet-mapping>
 		<servlet-name>DaftarGrup</servlet-name>
 		<url-pattern>/grup/list.asp</url-pattern>
