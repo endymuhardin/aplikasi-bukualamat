@@ -2,6 +2,21 @@
 <!DOCTYPE page-specification PUBLIC
 "-//Apache Software Foundation//Tapestry Specification 4.0//EN"
 "http://jakarta.apache.org/tapestry/dtd/Tapestry_4_0.dtd">
-<page-specification>
+<page-specification class="bukualamat.ui.tapestry.controller.GrupController">
+	<property name="g"/>
+
+	<component id="tabelGrup" type="For">
+		<binding name="source" value="daftarGrup"/>
+		<binding name="value" value="g"/>
+		<binding name="elemeent" value="literal:tr"/>
+	</component>
+	
+	<component id="kode" type="Insert">
+		<binding name="value" value="g.kode"/>
+	</component>
+	
+	<component id="nama" type="Insert">
+		<binding name="value" value="g.nama"/>
+	</component>
 
 </page-specification>

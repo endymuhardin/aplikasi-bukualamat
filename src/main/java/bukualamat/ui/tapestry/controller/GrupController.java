@@ -1,16 +1,23 @@
 package bukualamat.ui.tapestry.controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.apache.tapestry.html.BasePage;
 import org.apache.tapestry.record.PropertyChangeObserver;
-
-import com.javaforge.tapestry.spring.annotations.InjectSpring;
 
 import bukualamat.entity.Grup;
 import bukualamat.service.BukuAlamatService;
 
+import com.javaforge.tapestry.spring.annotations.InjectSpring;
+
 public abstract class GrupController extends BasePage {
+	@InjectSpring("bukuAlamatService")
+	public abstract BukuAlamatService getBukuAlamatService();
+
 	private Grup grup = new Grup();
-	
+	private List<Grup> daftarGrup = new ArrayList<Grup>();
+		
 	public String simpan(){
 		getBukuAlamatService().simpan(grup);
 		grup = new Grup();
@@ -18,8 +25,16 @@ public abstract class GrupController extends BasePage {
 		return "DaftarGrup";
 	}
 
-	@InjectSpring("bukuAlamatService")
-	public abstract BukuAlamatService getBukuAlamatService();
+	public List<Grup> getDaftarGrup() {
+		daftarGrup = getBukuAlamatService().semuaGrup();
+		return daftarGrup;
+	}
+
+	public void setDaftarGrup(List<Grup> daftarGrup) {
+		this.daftarGrup = daftarGrup;
+	}
+
+
 
 	public Grup getGrup() {
 		return grup;
