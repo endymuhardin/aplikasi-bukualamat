@@ -144,6 +144,12 @@
 			<version>4.1.6</version>
 		</dependency>
 
+		<dependency>
+			<groupId>com.javaforge.tapestry</groupId>
+			<artifactId>tapestry-spring</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
