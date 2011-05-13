@@ -13,6 +13,7 @@ public abstract class GrupController extends BasePage {
 	
 	public String simpan(){
 		getBukuAlamatService().simpan(grup);
+		grup = new Grup();
 		System.out.println("Method simpan ditekan");
 		return "DaftarGrup";
 	}
