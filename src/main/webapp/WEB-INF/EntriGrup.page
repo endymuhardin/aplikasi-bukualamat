@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE page-specification PUBLIC
+"-//Apache Software Foundation//Tapestry Specification 4.0//EN"
+"http://jakarta.apache.org/tapestry/dtd/Tapestry_4_0.dtd">
+<page-specification class="bukualamat.ui.tapestry.controller.GrupController">
+
+	<component id="formEditGrup" type="Form">
+		<binding name="listener" value="listener:simpan"/>	
+	</component>
+	
+	<component id="kode" type="TextField">
+		<binding name="value" value="ognl:grup.kode"/>	
+	</component>
+	
+	<component id="nama" type="TextField">
+		<binding name="value" value="ognl:grup.nama"/>	
+	</component>
+
+</page-specification>

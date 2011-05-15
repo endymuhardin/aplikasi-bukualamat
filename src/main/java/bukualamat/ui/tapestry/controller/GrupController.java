@@ -34,8 +34,6 @@ public abstract class GrupController extends BasePage {
 		this.daftarGrup = daftarGrup;
 	}
 
-
-
 	public Grup getGrup() {
 		return grup;
 	}
