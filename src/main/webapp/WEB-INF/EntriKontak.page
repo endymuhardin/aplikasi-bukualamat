@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE page-specification PUBLIC
+"-//Apache Software Foundation//Tapestry Specification 4.0//EN"
+"http://jakarta.apache.org/tapestry/dtd/Tapestry_4_0.dtd">
+<page-specification class="bukualamat.ui.tapestry.controller.KontakController">
+
+	<component id="formEntriKontak" type="Form">
+		<binding name="listener" value="listener:simpan"/>	
+	</component>
+	
+	<component id="groupId" type="PropertySelection">
+		<binding name="model" value="daftarGroups"/>
+		<binding name="value" value="selectedGroupId"/>
+	</component>
+	
+	<component id="nama" type="TextField">
+		<binding name="value" value="ognl:entriKontak.nama"/>	
+	</component>
+	
+	<component id="email" type="TextField">
+		<binding name="value" value="ognl:entriKontak.email"/>	
+	</component>
+	
+	<component id="mobile" type="TextField">
+		<binding name="value" value="ognl:entriKontak.mobile"/>	
+	</component>
+	
+	<component id="phone" type="TextField">
+		<binding name="value" value="ognl:entriKontak.phone"/>	
+	</component>
+
+</page-specification>
