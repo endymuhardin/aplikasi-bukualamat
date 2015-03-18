@@ -12,7 +12,7 @@
 		<intercept-url pattern="/index.html/**" access="ROLE_USER" />
 		<intercept-url pattern="/**" filters="none" />
 		
-		<form-login login-page="/login.html" default-target-url="/index.html"/>
+		<form-login login-page="/login.html" default-target-url="/app"/>
 	</http>
 
 	<authentication-manager>

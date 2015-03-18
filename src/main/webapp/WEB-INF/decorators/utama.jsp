@@ -65,7 +65,8 @@ Released   : 20091101
 				<li>
 					<h2>Menu Aplikasi</h2>
 					<ul>
-						<li><a href="<%=request.getContextPath()%>/grup/list.asp">Daftar Grup</a></li>
+						<li><a href="<%=request.getContextPath()%>/app?service=page&page=DaftarGrup">Daftar Grup</a></li>
+						<li><a href="<%=request.getContextPath()%>/app?service=page&page=DaftarKontak">Daftar Kontak</a></li>
 					</ul>
 				</li>
 			</ul>
